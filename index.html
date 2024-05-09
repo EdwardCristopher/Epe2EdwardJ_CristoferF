@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPE 2</title>
+    <style>
+       
+       table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+
+       
+        button {
+            background-color: #0f2d60; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #14878b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filtro Proveedor/Categoria</h1>
+    <label for="proveedores">Selecciona un proveedor:</label>
+    <select id="proveedores">
+        <option value="Todos">Todos</option>
+        <option value="Exotic Liquids">Exotic Liquids</option>
+        <option value="New Orleans Cajun Delights">New Orleans Cajun Delights</option>
+        <option value="Grandma Kelly's Homestead">Grandma Kelly's Homestead</option>
+        <option value="Tokyo Traders">Tokyo Traders</option>
+        <option value="Cooperativa de Quesos 'Las Cabras'">Cooperativa de Quesos 'Las Cabras'</option>
+        <option value="Mayumi's">Mayumi's</option>
+        <option value="Pavlova, Ltd.">Pavlova, Ltd.</option>
+        <option value="Aux joyeux ecclésiastiques">Aux joyeux ecclésiastiques</option>
+        <option value="Specialty Biscuits, Ltd.">Specialty Biscuits, Ltd.</option>
+        <option value="PB Knäckebröd AB">PB Knäckebröd AB</option>
+        <option value="Refrescos Americanas LTDA">Refrescos Americanas LTDA</option>
+        <option value="Heli Süßwaren GmbH & Co. KG">Heli Süßwaren GmbH & Co. KG</option>
+        <option value="Plutzer Lebensmittelgroßmärkte AG">Plutzer Lebensmittelgroßmärkte AG</option>
+        <option value="Nord-Ost-Fisch Handelsgesellschaft mbH">Nord-Ost-Fisch Handelsgesellschaft mbH</option>
+        <option value="Formaggi Fortini s.r.l.">Formaggi Fortini s.r.l.</option>
+        <option value="Norske Meierier">Norske Meierier</option>
+        <option value="Bigfoot Breweries">Bigfoot Breweries</option>
+        <option value="Svensk Sjöföda AB">Svensk Sjöföda AB</option>
+        <option value="Leka Trading">Leka Trading</option>
+        <option value="Lyngbysild">Lyngbysild</option>
+        <option value="Zaanse Snoepfabriek">Zaanse Snoepfabriek</option>
+        <option value="Karkki Oy">Karkki Oy</option>
+        <option value="G'day, Mate">G'day, Mate</option>
+        <option value="Ma Maison">Ma Maison</option>
+        <option value="Pasta Buttini s.r.l.">Pasta Buttini s.r.l.</option>
+        <option value="Escargots Nouveaux">Escargots Nouveaux</option>
+        <option value="Gai pâturage">Gai pâturage</option>
+        <option value="Forêts d'érables">Forêts d'érables</option>
+    </select>
+    <button onclick="FiltroProveedor()">Filtrar</button>
+
+
+    <label for="categoria">Selecciona una categoria:</label>
+    <select id="categoria"> 
+        <option value="Todos">Todos</option>
+        <option value="Bebidas">Bebidas</option>
+        <option value="Condimentos">Condimentos</option>
+        <option value="Frutas/Verduras">Frutas/Verduras</option>
+        <option value="Carnes">Carnes</option>
+        <option value="Pescado/Marisco">Pescado/Marisco</option>
+        <option value="Lácteos">Lácteos</option>
+        <option value="Repostería">Repostería</option>
+        <option value="Granos\/Cereales">Granos/Cereales</option>
+    </select>
+    <button onclick="FiltroCategoria()">Filtrar</button>
+  
+  
+    <table id="Indicadores_tabla">
+        <thead>
+            <tr>
+                <th>IdProducto</th>
+                <th>NombreProducto</th>
+                <th>Proveedor</th>
+                <th>Categoría</th>
+                <th>CantidadPorUnidad</th>
+                <th>PrecioUnidad</th>
+                <th>UnidadesEnExistencia</th>
+                <th>UnidadesEnPedido</th>
+                <th>NivelNuevoPedido</th>
+                <th>Suspendido</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script src="Filtros.js"></script>
+</body>
+</html>
+
+
